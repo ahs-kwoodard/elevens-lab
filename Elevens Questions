@@ -1,0 +1,57 @@
+Elevens Lab Answers
+-------------------
+	Exercise II
+		1. A card is an object that is stored within the deck. The deck serves as storage for
+		each of these card objects.
+		2. 3
+		3. String[] ranks = {"Ace", "2,", "3", "4", "5", "6", "7", "8", "9",
+            "10", "Jack", "Queen", "King"};
+			String[] suits = {"Spades", "Hearts", "Clubs", "Diamonds"};
+			int[] values = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
+		4. Yes, if the elements are inserted out of order, the cards will not be created correctly
+		because the data type may not match or the contents of the array would not make sense in
+		the context of whatever parameter it is placed within.
+		5. 
+		
+	Exercise III
+		1. 
+		
+			import java.util.Random();
+		
+			public static String flip() {
+				Random r = new Random();
+				String coin;
+				int outOfThree = r.nextInt(3);
+				
+				if (outOfThree == 0 || outOfThree == 2) {
+					coin = "heads";
+				} else {
+					coin = "tails";
+				}
+				
+				return coin;
+			}
+			
+		2.
+			public static arePermutations(int[] ar1, int[] ar2) {
+				for(int i = 0; i < ar1.length; i++) {
+					for(int x = 0; x < ar2.length; x++) {
+						if (ar1[i] == ar2[x]) {
+							return true;
+						} else {
+							return false;
+						}
+					}
+				}
+			}
+			
+		3. 0, 0, 1
+		
+	Activity 6
+		1. 5 of Clubs and 6 of Spades, 5 of Spades and 6 of Clubs
+		2. Yes, because the amount of face cards of each suit are equivalents between Kings, Queens
+		and Jacks. This is also supported with the fact that if the amount of face cards are subtracted
+		from the deck, the deck is left with an even number. Therefore with three cards remaining, they
+		must be face cards.
+		3. The game does not involve strategy. The occurences within it happen due to chance and you cannot
+		strategically plan on which play to make.
