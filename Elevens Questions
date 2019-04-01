@@ -101,6 +101,7 @@ Elevens Lab Answers
 			-You must create different sums depending on the game (i.e. Elevens = 11, Tens = 10, etc.)
 			-The sequence of face cards varies depending on the game.
 			
-		2. 
+		2. Through the superclass. The exact mechanism to accomplish this is
+		3. They do not, they need specific modifications to make them specific to each game.
 	
 	
