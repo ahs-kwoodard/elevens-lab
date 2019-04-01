@@ -47,7 +47,7 @@ Elevens Lab Answers
 			
 		3. 0, 0, 1
 		
-	Activity 6
+	Activity VI
 		1. 5 of Clubs and 6 of Spades, 5 of Spades and 6 of Clubs
 		2. Yes, because the amount of face cards of each suit are equivalents between Kings, Queens
 		and Jacks. This is also supported with the fact that if the amount of face cards are subtracted
@@ -55,3 +55,52 @@ Elevens Lab Answers
 		must be face cards.
 		3. The game does not involve strategy. The occurences within it happen due to chance and you cannot
 		strategically plan on which play to make.
+		
+	Activity VII
+		1. You would need a deck of cards and presumably a surface to set them upon.
+		   The private instance variables necessary would be Deck and Cards[]
+		2. Create cards.
+		   Create the board.
+		   Put the cards into the deck.
+		   Shuffle the deck.
+		   Deal nine cards onto the board.
+		   While there is a move available on the board:
+		   	If there are two cards on the board that sum to 11:
+				Remove the two cards.
+				Replace the two cards.
+			Else if there are a King, Queen, and Jack on the board.
+				Remove the three cards.
+				Replace the three cards.
+		   If there are no cards left on board:
+		   	Player wins.
+		   Else:
+		   	Player loses.
+		 3. There is not everything necessary to play the Elevens game. There is no method to remove cards.
+		 4. 
+		 	a. Within the constructor and newGame method
+			b. isLegal, anotherPlayIsPossible
+			c. J(HEARTS), 6(CLUBS), 2(SPADES), A(SPADES), 4(HEARTS)
+			d. 
+				public static printCards (ElevensBoard board){
+					List <Integer> cIndexes = board.cardIndexes();
+					for(int i = 0; i < cIndexes.size(); i++) {
+						System.out.println(cIndexes.get(x));
+					}
+			e. anotherPlayIsPossible because it needs to check the card indexes before checking for pairs or three consecutive ranks of face cards.
+		
+	Activity VIII
+		1. Elevens, Thirteens, and Tens are similar because their gaming mechanic is similar.
+			-They are all played on a board.
+			-You use cards to play all three games.
+			-They are all single player.
+			-The game objective is to remove cards from the deck by adding up to a specific sum.
+				-Or you can remove cards if they are a specific sequence of face cards.
+			
+			The differences are:
+			-You have a different number of cards on the board.
+			-You must create different sums depending on the game (i.e. Elevens = 11, Tens = 10, etc.)
+			-The sequence of face cards varies depending on the game.
+			
+		2. 
+	
+	
